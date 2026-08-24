@@ -54,4 +54,41 @@ test()
 def calculate_square(number): 
     return number * number 
 result = calculate_square(5)  
-print(result)   
+print(result)
+
+#Keyword Arguments 
+def student(name,age): 
+    print("Name:",name)  
+    print("Age:",age) 
+
+student(name="Bharathi",age=20)
+
+#Multiple parameter + default parameter 
+def movie_info(title,rating=0): 
+    print(title) 
+    print(rating) 
+movie_info("Avatar")
+movie_info("Avatar",8.5) 
+
+#Mixing Positional and Keyword Arguments 
+def movie_info(title,genre,rating): 
+    print(title,genre,rating)  
+movie_info("Avatar",genre="Sci-fi",rating=8.5) 
+
+#Default Parameters + Keyword Arguments 
+def movie_info(title, genre="Unknown"):
+    print(title)
+    print(genre) 
+movie_info("Avatar") 
+movie_info("Avatar", genre="Sci-Fi") 
+
+def create_profile(name, age, country="India"):
+    print(name)
+    print(age)
+    print(country) 
+create_profile("Prapthi", 20) 
+create_profile("Prapthi", 20, country="USA") 
+
+
+   
+
